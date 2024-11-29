@@ -1,0 +1,33 @@
+@import '@styles/_mixin.module.scss';
+@import '@styles/_variable.module.scss';
+
+.container {
+    @include flex-box-custom(space-between, center, 0px);
+
+    background-color: $primary-color;
+    margin-top: -75px;
+    padding: 20px 50px;
+}
+
+.containerCard {
+    @include flex-box-custom(center, center, 18px);
+
+    width: 280px;
+    height: 104px;
+}
+
+.containerContent {
+    @include flex-box-custom(center, flex-start, 11px);
+
+    flex-direction: column; //căn theo chiều dọc
+    font-weight: 350;
+    .title {
+        font-size: 17px;
+        color: $white-color;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #ffffffc7;
+    }
+}

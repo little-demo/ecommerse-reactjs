@@ -1,0 +1,18 @@
+@import '@styles/_variable.module.scss';
+@import '@styles/_mixin.module.scss';
+
+.btn {
+    @include btn(176px, 42px, $primary-color, 3px);
+    color: $white-color;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 13px 45px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        transition: background-color 300ms;
+    }
+}
